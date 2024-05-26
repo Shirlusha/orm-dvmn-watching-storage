@@ -1,38 +1,37 @@
-# Пульт охраны банка
+# Bank Security Console
 
-Это внутренний репозиторий для содрудников банка "Сияние". Если вы попали в этот репозиторий случайно, то не сможете его запустить, т.к. у вас нет доступа к БД, но можете свободно использовать код вёрстки или посмотреть как реализованы запросы к БД.
+This is an internal repository for employees of "Siyaniye" bank. If you have stumbled upon this repository accidentally, you will not be able to run it as you do not have access to the database. However, you are free to use the layout code or see how the database queries are implemented.
 
-Пульт охраны - это сайт, который можно подключить к удаленной базе данных с визитами и карточками пропуска сотрудников нашего банка.
+The security console is a website that can be connected to a remote database with visits and employee pass cards.
 
-### Как установить
+### How to Install
 
-
-Python3 должен быть уже установлен. Затем используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:
+Python3 should already be installed. Then use pip (or pip3, if there is a conflict with Python2) to install the dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
-Затем создайте файл .env в папке project и пропишите ваши данные без кавычек в формате:
+Then create a .env file in the project folder and write your data without quotes in the format:
 
 ```
-HOST = url адрес базы данных
+HOST = database url
 
-PORT = номер порта
+PORT = port number
 
-NAME = имя базы данных
+NAME = database name
 
-USER = имя пользователя
+USER = username
 
-PASSWORD = пароль от базы данных
+PASSWORD = database password
 
-SECRET_KEY = пароль от SECRET_KEY
+SECRET_KEY = password for SECRET_KEY
 
-DEBUG = статус DEBUG в формате True or False
+DEBUG = DEBUG status in True or False format
 
-ALLOWED_HOSTS = список хостов для работы
+ALLOWED_HOSTS = list of hosts
 ```
 
-### Цель проекта
+### Objective of the project
 
-Код написан в образовательных целях на онлайн-курсе Django ORM на [dvmn.org](https://dvmn.org/).
+The code was written for educational purposes in the Django ORM online course at [dvmn.org](https://dvmn.org/).
